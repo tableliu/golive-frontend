@@ -1,4 +1,4 @@
-# Project
+# IM frontend
 
 ## 安装依赖包
 ```
