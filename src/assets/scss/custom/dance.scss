@@ -1,0 +1,62 @@
+.dance{
+  -webkit-animation-name: bird;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: bird;
+  -moz-animation-duration: 4s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: bird;
+  -o-animation-duration: 4s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-name: bird;
+  -ms-animation-duration: 4s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: infinite;
+  animation-name: bird;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bird{
+   0% {
+       -moz-transform: translate(0,0);
+       -webkit-transform: translate(0,0);
+       -o-transform: translate(0,0);
+       -ms-transform: translate(0, 0);
+       transform: translate(0,0);
+   }
+
+   25% {
+       -moz-transform: translate(0,-10px);
+       -webkit-transform: translate(0,-10px);
+       -o-transform: translate(0,-10px);
+       -ms-transform: translate(0, -10px);
+       transform: translate(0,-10px);
+   }
+   50% {
+       -moz-transform: translate(0,-20px);
+       -webkit-transform: translate(0,-20px);
+       -o-transform: translate(0,-20px);
+       -ms-transform: translate(0, -20px);
+       transform: translate(0,-20px);
+   }
+
+    75% {
+       -moz-transform: translate(0,-10px);
+       -webkit-transform: translate(0,-10px);
+       -o-transform: translate(0,-10px);
+       -ms-transform: translate(0, -10px);
+       transform: translate(0,-10px);
+   }
+
+    100% {
+       -moz-transform: translate(0,0);
+       -webkit-transform: translate(0,0);
+       -o-transform: translate(0,0);
+       -ms-transform: translate(0, 0);
+       transform: translate(0,0);
+   }
+}

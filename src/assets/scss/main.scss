@@ -1,0 +1,424 @@
+// scss
+html{
+   touch-action:none;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #7F7F7F;
+}
+h3, h4, h5, h6 {
+  font-weight: 500 !important;
+  // letter-spacing: 3px !important;
+}
+.container, .app-card{
+  background: #F4F7FA !important;
+}
+.v-dialog .container, .v-dialog .app-card {
+  background: #fff !important;
+}
+.container {
+  padding: 0 !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.container.grid-list-xl .layout:only-child {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.container.grid-list-xl .layout .flex {
+  padding: 0 12px !important;
+}
+
+// button
+.btn-large {
+  height: 60px !important;
+  min-width: 200px !important;
+}
+.btn-mini {
+  height: 40px !important;
+  min-width: 100% !important;
+}
+.btn-micro {
+  height: 30px !important;
+  min-width: 90% !important;
+}
+.v-btn__content {
+  height: 100%;
+  position: static !important;
+}
+.btn-large .v-btn__content .v-icon, .btn-large .v-icon {
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  background: rgba(241,241,241, 0.8);
+}
+
+.btn-mini .v-btn__content .v-icon, .btn-mini .v-icon {
+  max-width: 50px;
+  min-width: 30px;
+  width: auto;
+}
+.btn-micro .v-btn__content .v-icon, .btn-micro .v-icon {
+  max-width: 30px;
+  min-width: 20px;
+  width: auto;
+}
+.btn-large span, .btn-large .v-btn__content a {
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-left:  10%;
+  text-align: center;
+}
+.btn-large .v-ripple__container {
+  margin:0;
+}
+.btn-large .v-btn__loading{
+  margin: 0;
+}
+.btn-font-color{
+  color: #4A7BAF;
+}
+.add-btn-small, .v-dialog__activator{
+  height: 100%;
+}
+.add-btn-small {
+  margin-left: 40px;
+  font-size: 2rem !important;
+}
+// header thems
+.head {
+  color: #fff !important;
+}
+.head-primary {
+  background: -webkit-linear-gradient(left, #00D014 , #86FF92); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #00D014, #86FF92); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #00D014, #86FF92); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #00D014 , #86FF92); /* 标准的语法 */
+}
+.head-info {
+  color: #fff;
+  background: -webkit-linear-gradient(left, #00D0BD , #00EAD2); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #00D0BD, #00EAD2); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #00D0BD, #00EAD2); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #00D0BD , #00EAD2); /* 标准的语法 */
+}
+.head-warning {
+  background: -webkit-linear-gradient(left, #FFB70F , #FFE3A4); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #FFB70F, #FFE3A4); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #FFB70F, #FFE3A4); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #FFB70F , #FFE3A4); /* 标准的语法 */
+}
+.head-success {
+  background: -webkit-linear-gradient(left, #00D014 , #6AFF79); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #00D014, #6AFF79); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #00D014, #6AFF79); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #00D014 , #6AFF79); /* 标准的语法 */
+}
+.head-error {
+  background: -webkit-linear-gradient(left, #FF3739 , #FF8C8C); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #FF3739, #FF8C8C); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #FF3739, #FF8C8C); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #FF3739 , #FF8C8C); /* 标准的语法 */
+}
+.head-info {
+  background: -webkit-linear-gradient(left, #5D92F4 , #86ADF7); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #5D92F4, #86ADF7); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #5D92F4, #86ADF7); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #5D92F4 , #86ADF7); /* 标准的语法 */
+}
+.head-default {
+  background: -webkit-linear-gradient(left, #4A6696 , #3EA8C2); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #4A6696, #3EA8C2); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #4A6696, #3EA8C2); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #4A6696 , #3EA8C2); /* 标准的语法 */
+}
+// 表格
+.card-table, .card-table .v-datatable__actions, .card-table tr, .card-table .container {
+  background: #F4F7FA !important;
+}
+.v-dialog  {
+  border-radius: 5px !important;
+}
+.v-card-table .container {
+  width: 60% !important;
+  margin: 0 20% !important;
+}
+.v-card-table .card-title {
+  margin-top: 20px;
+  font-size: 1.4rem !important;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #5494BA !important;
+}
+.card-title {
+  width: 100%;
+  font-size: 2rem;
+  color: rgba(0,0,0,0.54) !important;
+  text-align: center !important;
+}
+.card-subtitle {
+  font-size: 1rem !important;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.54);
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.card-title-library {
+  width: 95%;
+  font-size: 1.3rem;
+  color: rgba(0,0,0,0.54) !important;
+  text-align: left;
+  margin-top: 5px;
+}
+.v-dialog-noradius {
+  border-radius: 4px !important;
+}
+.v-card-table .v-dialog-nomargin-nppadding {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+.v-card-table .v-input__slot {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.v-card-table .v-card__actions button {
+  margin: 0 20px !important;
+  background: #6DA3C2 !important;
+  border-radius: 20px;
+  min-width: 108px;
+}
+.v-card-table .v-card__actions button[disabled=disabled] {
+  background: #ccc !important;
+}
+.v-card-table .v-card__actions button:hover {
+  background: #4686AC !important;
+}
+.v-card-table .v-card__actions .v-btn__content {
+  color: #fff !important;
+}
+.v-card-table .v-card-actions-buttons {
+  margin: 0 auto !important;
+  margin-bottom: 10px !important;
+}
+.v-card-table .v-messages__message {
+  line-height: 2 !important;
+}
+.card-table {
+  box-shadow: none !important;
+}
+.card-table div {
+  border: none !important;
+  box-shadow: none !important;
+}
+.card-table th,.card-table th i {
+  color: #4A7BAF !important;
+}
+.card-table td {
+  color: #7F7F7F !important;
+}
+.card-table td i {
+  color: #4A7BAF !important;
+}
+.v-datatable__actions__range-controls .v-btn {
+  display: none;
+}
+// 图片
+.v-image__image {
+  z-index: auto !important;
+}
+// 字体
+.flex-title {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #7F7F7F;
+  white-space: nowrap;
+}
+.search-key-word {
+  background: #FF9632;
+  // color: #fff;
+  // font-size: 0.8rem;
+  // font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0 1px;
+}
+// 表格
+.v-datatable td>a {
+  text-decoration: underline;
+}
+.v-input--switch .v-input__control {
+  margin: 0 auto;
+}
+// 自定义
+.dotted-line {
+  width: 1px !important;
+  height: 50px;
+  border-right: dashed;
+  border-color: #7F7F7F !important;
+}
+.container-full-width {
+  width: 95% !important;
+  max-width: 95% !important;
+}
+.page-first-container {
+  padding-top: 100px !important;
+}
+.container-margin {
+  margin: 30px auto !important;
+}
+.container-margin-mini {
+  margin: 10px auto !important;
+}
+.container-tiny-mini {
+  margin: 5px auto !important;
+}
+.container-padding-mini {
+  padding: 10px 0 !important;
+}
+.container-padding-tiny {
+  padding: 5px 0 !important;
+}
+.margin-padding-none {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.v-icon-active {
+  color: #fff !important;
+  background: rgb(74, 124, 175) !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.chip-group-item {
+  margin-bottom: auto;
+}
+.v-chip--small .v-chip__content {
+  height: 24px !important;
+  max-height: 24px !important;
+}
+.login-bg {
+  background: url('/static/login-bg.png') no-repeat fixed center;
+  background-size: 100% 100%;
+}
+.session-wrapper .session-right .session-table-cell .session-content {
+  max-width: 300px !important;
+  margin-top: 6% !important;
+  margin-left: 60% !important;
+}
+.login-font-white {
+  color: #fff;
+}
+.login-form label, .login-form input, .login-form .primary--text{
+  color:#fff !important;
+}
+.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
+      min-height:auto !important;
+}
+.history-table-pagination {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.container.grid-list-md .layout:only-child {
+  margin: 0 !important;
+}
+.chip-group {
+  margin: 0 auto;
+}
+.v-menu-datepicker {
+  margin-left: 20px;
+}
+.div-relative {
+  position: relative;
+}
+.cursor-pointer, .cursor-pointer * {
+  cursor: pointer;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.v-datatable .text-color-red {
+  color: rgba(255, 34, 34, 0.8) !important;
+}
+.fade-in {
+  cursor: pointer;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 3s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes fadeIn {
+  0% {
+  opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+  opacity: 0; /*中间状态 透明度为0*/
+  }
+  100% {
+  opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+.fade-out {
+  cursor: pointer;
+  -webkit-animation-name: fadeOut; /*动画名称*/
+  -webkit-animation-duration: 3s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes fadeOut {
+  0% {
+  opacity: 1; /*初始状态 透明度为0*/
+  }
+  50% {
+  opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+  opacity: 0; /*结尾状态 透明度为1*/
+  }
+}
+.fade-in-out {
+  cursor: pointer;
+  -webkit-animation-name: fadeInOut; /*动画名称*/
+  -webkit-animation-duration: 5s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes fadeInOut {
+  0% {
+  opacity: 0; /*初始状态 透明度为0*/
+  }
+  25% {
+  opacity: 0.5; /*中间状态 透明度为0.5*/
+  }
+  50% {
+  opacity: 1; /*中间状态 透明度为1*/
+  }
+  75% {
+  opacity: 0.5; /*中间状态 透明度为0.5*/
+  }
+  100% {
+  opacity: 0; /*结尾状态 透明度为0*/
+  }
+}
+.v-input switch v-input--selection-controls v-input--switch theme--light {
+  max-width: 40px;
+  margin: 0 auto;
+}
+
+@media(max-width:960px){
+  .session-wrapper .session-right .session-table-cell .session-content {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+  .login-bg {
+    background: url('/static/login-bg.png') no-repeat fixed center;
+    background-size: auto 100%;
+  }
+}
